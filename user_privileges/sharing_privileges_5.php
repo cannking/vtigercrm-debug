@@ -98,33 +98,9 @@ $Documents_share_read_permission=array('ROLE'=>array(),'GROUP'=>array());
 
 $Documents_share_write_permission=array('ROLE'=>array(),'GROUP'=>array());
 
-$Products_share_read_permission=array('ROLE'=>array(),'GROUP'=>array());
-
-$Products_share_write_permission=array('ROLE'=>array(),'GROUP'=>array());
-
-$Vendors_share_read_permission=array('ROLE'=>array(),'GROUP'=>array());
-
-$Vendors_share_write_permission=array('ROLE'=>array(),'GROUP'=>array());
-
-$PBXManager_share_read_permission=array('ROLE'=>array(),'GROUP'=>array());
-
-$PBXManager_share_write_permission=array('ROLE'=>array(),'GROUP'=>array());
-
 $ServiceContracts_share_read_permission=array('ROLE'=>array(),'GROUP'=>array());
 
 $ServiceContracts_share_write_permission=array('ROLE'=>array(),'GROUP'=>array());
-
-$Services_share_read_permission=array('ROLE'=>array(),'GROUP'=>array());
-
-$Services_share_write_permission=array('ROLE'=>array(),'GROUP'=>array());
-
-$Assets_share_read_permission=array('ROLE'=>array(),'GROUP'=>array());
-
-$Assets_share_write_permission=array('ROLE'=>array(),'GROUP'=>array());
-
-$ModComments_share_read_permission=array('ROLE'=>array(),'GROUP'=>array());
-
-$ModComments_share_write_permission=array('ROLE'=>array(),'GROUP'=>array());
 
 $ProjectMilestone_share_read_permission=array('ROLE'=>array(),'GROUP'=>array());
 

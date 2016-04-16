@@ -45,3 +45,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+test/templates_c/vlayout/*.php
+logs/*.*
+test/templates_c/vlayout/e1a820d011b24e917c97e728bef10e355b14d224.file.Login.Default.tpl.php
+logs/vtigercrm.log
+test/templates_c/vlayout/e1a820d011b24e917c97e728bef10e355b14d224.file.Login.Default.tpl.php
+test/templates_c/vlayout/e1a820d011b24e917c97e728bef10e355b14d224.file.Login.Default.tpl.php

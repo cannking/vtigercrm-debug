@@ -45,7 +45,8 @@
 					<a target="_blank" href="http://{$COMPANY_DETAILSCOMPANY_DETAILS.website}">{$COMPANY_DETAILS.name}</a>
 					</div>
 				</div>
-				<!-- comment by cannking 2015/12/23
+				
+				<!-- comment by cannking 2015/12/23 start here
 				<div class="span9">
 					<div class="helpLinks">
 						<a href="https://www.vtiger.com">Vtiger Website</a> | 
@@ -54,7 +55,8 @@
 						<a href="https://discussions.vtiger.com/">Vtiger Forums</a> 
 					</div>
 				</div>
-				-->
+				end here -->
+				
 			</div>
 			<div class="row-fluid">
 				<div class="span12">
@@ -63,7 +65,7 @@
 							<div class="row-fluid">
 								<div class="span6">
 									<div class="carousal-container">
-										<div><h2> Get more out of Vtiger </h2></div>
+										<div><h2> 易猎头--方便您的工作</h2></div>	
 										<ul class="bxslider">
 											<li>
 												<div id="slide01" class="slide">
@@ -102,50 +104,48 @@
 									<div class="login-area">
 										<div class="login-box" id="loginDiv">
 											<div class="">
-												<h3 class="login-header">Login to Vtiger CRM</h3>
+												<h3 class="login-header">登录到易猎头</h3>
 		</div>
 											<form class="form-horizontal login-form" style="margin:0;" action="index.php?module=Users&action=Login" method="POST">
 			{if isset($smarty.request.error)}
 			<div class="alert alert-error">
-				<p>Invalid username or password.</p>
+				<p>错误的用户名或密码。</p>
 			</div>
 			{/if}
 												{if isset($smarty.request.fpError)}
 													<div class="alert alert-error">
-														<p>Invalid Username or Email address.</p>
+														<p>错误的用户名或邮件地址。</p>
 													</div>
 												{/if}
 												{if isset($smarty.request.status)}
 													<div class="alert alert-success">
-														<p>Mail has been sent to your inbox, please check your e-mail.</p>
+														<p>邮件已经发送到您的邮箱，请检查您的邮件。</p>
 													</div>
 												{/if}
 												{if isset($smarty.request.statusError)}
 													<div class="alert alert-error">
-														<p>Outgoing mail server was not configured.</p>
+														<p>邮件发送服务器没有正确配置。</p>
 													</div>
 												{/if}
 												<div class="control-group">
-													<label class="control-label" for="username"><b>User name</b></label>
+													<label class="control-label" for="username"><b>用户名</b></label>
 													<div class="controls">
 														<input type="text" id="username" name="username" placeholder="Username">
 													</div>
 												</div>
 
 			<div class="control-group">
-													<label class="control-label" for="password"><b>Password</b></label>
+													<label class="control-label" for="password"><b>密码</b></label>
 				<div class="controls">
 														<input type="password" id="password" name="password" placeholder="Password">
 													</div>
 												</div>
 												<div class="control-group signin-button">
 													<div class="controls" id="forgotPassword">
-														<button type="submit" class="btn btn-primary sbutton">Sign in</button>
-														&nbsp;&nbsp;&nbsp;<a>Forgot Password ?</a>
+														<button type="submit" class="btn btn-primary sbutton">登录</button>
+														&nbsp;&nbsp;&nbsp;<a>忘记密码 ?</a>
 													</div>
 												</div>
-												{* Retain this tracker to help us get usage details *}
-												<img src='//stats.vtiger.com/stats.php?uid={$APPUNIQUEKEY}&v={$CURRENT_VERSION}&type=U' alt='' title='' border=0 width='1px' height='1px'>
 											</form>
 											<div class="login-subscript">
 												<small> Powered by vtiger CRM {$CURRENT_VERSION}</small>
@@ -155,24 +155,24 @@
 										<div class="login-box hide" id="forgotPasswordDiv">
 											<form class="form-horizontal login-form" style="margin:0;" action="forgotPassword.php" method="POST">
 												<div class="">
-													<h3 class="login-header">Forgot Password</h3>
+													<h3 class="login-header">忘记密码</h3>
 			</div>
 			<div class="control-group">
-													<label class="control-label" for="user_name"><b>User name</b></label>
+													<label class="control-label" for="user_name"><b>用户名</b></label>
 				<div class="controls">
 														<input type="text" id="user_name" name="user_name" placeholder="Username">
 				</div>
 			</div>
 												<div class="control-group">
-													<label class="control-label" for="email"><b>Email</b></label>
+													<label class="control-label" for="email"><b>邮件地址</b></label>
 													<div class="controls">
 														<input type="text" id="emailId" name="emailId"  placeholder="Email">
 													</div>
 		</div>
 												<div class="control-group signin-button">
 													<div class="controls" id="backButton">
-														<input type="submit" class="btn btn-primary sbutton" value="Submit" name="retrievePassword">
-														&nbsp;&nbsp;&nbsp;<a>Back</a>
+														<input type="submit" class="btn btn-primary sbutton" value="提交" name="retrievePassword">
+														&nbsp;&nbsp;&nbsp;<a>返回</a>
 		</div>
 	</div>
 </form>
@@ -186,6 +186,8 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- cannking 2015/12/23
 		<div class="navbar navbar-fixed-bottom">
 			<div class="navbar-inner">
 				<div class="container-fluid">
@@ -211,6 +213,7 @@
 				</div>    
 			</div>   
 		</div>
+		-->
 	</body>
 	<script>
 		jQuery(document).ready(function(){
@@ -233,13 +236,13 @@
 				var illegalChars= /[\(\)\<\>\,\;\:\\\"\[\]]/ ;
 				
 				if(username == ''){
-					alert('Please enter valid username');
+					alert('请输入正确的用户名');
 					return false;
 				} else if(!emailFilter.test(email1) || email == ''){
-					alert('Please enater valid email address');
+					alert('请输入正确的邮件地址');
 					return false;
 				} else if(email.match(illegalChars)){
-					alert( "The email address contains illegal characters.");
+					alert( "邮件地址中包含不可用的字符。");
 					return false;
 				} else {
 					return true;
